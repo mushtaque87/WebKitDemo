@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" type="text/css" href="Login.css" />
+    </head>
+<body>
+
+        <h1 style = "text-align: center">Web Form for iOS</h1>
+        <div class="container">
+                <div class="inputContainer">
+                  <input class="style" type="email" placeholder="What's your email?" id="email"></input>
+                  <input class="style" type="email" placeholder="First Name" id="firstName"></input>
+                  <input class="style" type="email" placeholder="Last Name" id="lastName"></input>
+                  <div class="sumbitButtons">             
+                      <button type="submit" class="style" onclick="sendDetails()"><i>Send Data from Web to iOS</i></button>
+                  </div>
+                </div>              
+              </div>
+
+    <script>
+        function fillDetails(jsonData) {
+            console.log('jsonData =' , jsonData);
+            var userData = JSON.parse(jsonData);
+            document.getElementById("email").value = userData["email"];
+            document.getElementById("firstName").value =userData["firstName"];
+            document.getElementById("lastName").value = userData["lastName"];
+        }
+
+        function sendDetails() {
+                   var email = document.getElementById("email").value;
+                   var firstName = document.getElementById("firstName").value;
+                   var lastName = document.getElementById("lastName").value;
+                   var value = {"email":email , "firstName":firstName , "lastName" : lastName}
+
+                   try {
+                       webkit.messageHandlers.sumbitToiOS.postMessage(value);
+                      // webkit.messageHandlers.refreshWebPage.postMessage(dictionary);
+
+               } catch(err) {
+                       console.log('error');
+                    }
+               }
+                  
+    </script>
+
+</body>
+</html> 

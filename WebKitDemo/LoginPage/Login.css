@@ -1,0 +1,49 @@
+div.container {
+    display: flex; 
+    flex-direction: row;
+    /* background-color: black; */
+    height: 500px;
+    align-items: center;
+}
+
+
+div.inputContainer {
+    width: 100%;
+    height: 70%;
+   /* background-color: blueviolet; */  
+    display: flex; /* or inline-flex */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+input.style {
+    background-color: whitesmoke;
+    width: 70%;
+    height: 70px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 35px;
+    color: black;
+    font-size: 27px;    
+}
+
+div.sumbitButtons {
+    display: flex; /* or inline-flex */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    
+}
+
+button.style {
+    width: 70%;
+    height: 70px;
+    background-color:lightcoral;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 35px;
+    color: white;
+    font-size: 27px;
+}
