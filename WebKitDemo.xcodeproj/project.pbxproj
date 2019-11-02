@@ -10,8 +10,6 @@
 		645DD8452355E46F00177C46 /* iOSNativeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DD8442355E46F00177C46 /* iOSNativeInputView.swift */; };
 		645DD8472355E47F00177C46 /* iOSNativeInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 645DD8462355E47F00177C46 /* iOSNativeInputView.xib */; };
 		645DD84A2355E65200177C46 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DD8492355E65200177C46 /* UserData.swift */; };
-		64B8CA1623560F59003D082F /* iOSToWeb.gif in Resources */ = {isa = PBXBuildFile; fileRef = 64B8CA1423560F58003D082F /* iOSToWeb.gif */; };
-		64B8CA1723560F59003D082F /* WebToiOS.gif in Resources */ = {isa = PBXBuildFile; fileRef = 64B8CA1523560F59003D082F /* WebToiOS.gif */; };
 		64C2C086234E11D400105AF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2C085234E11D400105AF7 /* AppDelegate.swift */; };
 		64C2C088234E11D400105AF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2C087234E11D400105AF7 /* SceneDelegate.swift */; };
 		64C2C08A234E11D500105AF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2C089234E11D500105AF7 /* ViewController.swift */; };
@@ -23,7 +21,6 @@
 		64C2C0B6234E13B100105AF7 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C2C0B5234E13B100105AF7 /* WebViewController.swift */; };
 		64C2C0BA234E13FB00105AF7 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 64C2C0B8234E13FB00105AF7 /* index.html */; };
 		64C2C0BB234E13FB00105AF7 /* Login.css in Resources */ = {isa = PBXBuildFile; fileRef = 64C2C0B9234E13FB00105AF7 /* Login.css */; };
-		64C2C0BE234F1C2600105AF7 /* TestObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C2C0BD234F1C2600105AF7 /* TestObjC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +44,6 @@
 		645DD8442355E46F00177C46 /* iOSNativeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSNativeInputView.swift; sourceTree = "<group>"; };
 		645DD8462355E47F00177C46 /* iOSNativeInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iOSNativeInputView.xib; sourceTree = "<group>"; };
 		645DD8492355E65200177C46 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
-		64B8CA1423560F58003D082F /* iOSToWeb.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = iOSToWeb.gif; sourceTree = "<group>"; };
-		64B8CA1523560F59003D082F /* WebToiOS.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = WebToiOS.gif; sourceTree = "<group>"; };
 		64C2C082234E11D400105AF7 /* WebKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64C2C085234E11D400105AF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64C2C087234E11D400105AF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,8 +62,6 @@
 		64C2C0B8234E13FB00105AF7 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		64C2C0B9234E13FB00105AF7 /* Login.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = Login.css; sourceTree = "<group>"; };
 		64C2C0BC234F1C2500105AF7 /* WebKitDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebKitDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		64C2C0BD234F1C2600105AF7 /* TestObjC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObjC.m; sourceTree = "<group>"; };
-		64C2C0BF234F1CA400105AF7 /* TestObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObjC.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,15 +106,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		64B8CA1323560F4A003D082F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				64B8CA1423560F58003D082F /* iOSToWeb.gif */,
-				64B8CA1523560F59003D082F /* WebToiOS.gif */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		64C2C079234E11D400105AF7 = {
 			isa = PBXGroup;
 			children = (
@@ -149,16 +133,14 @@
 				64C2C087234E11D400105AF7 /* SceneDelegate.swift */,
 				64C2C089234E11D500105AF7 /* ViewController.swift */,
 				64C2C0B5234E13B100105AF7 /* WebViewController.swift */,
+				64C2C0B8234E13FB00105AF7 /* index.html */,
+				64C2C0B9234E13FB00105AF7 /* Login.css */,
 				64C2C08B234E11D500105AF7 /* Main.storyboard */,
 				645DD8432355E44B00177C46 /* View */,
 				645DD8482355E63D00177C46 /* Model */,
-				64C2C0B7234E13FB00105AF7 /* LoginPage */,
-				64B8CA1323560F4A003D082F /* Resources */,
 				64C2C08E234E11D600105AF7 /* Assets.xcassets */,
 				64C2C090234E11D600105AF7 /* LaunchScreen.storyboard */,
 				64C2C093234E11D600105AF7 /* Info.plist */,
-				64C2C0BF234F1CA400105AF7 /* TestObjC.h */,
-				64C2C0BD234F1C2600105AF7 /* TestObjC.m */,
 				64C2C0BC234F1C2500105AF7 /* WebKitDemo-Bridging-Header.h */,
 			);
 			path = WebKitDemo;
@@ -180,15 +162,6 @@
 				64C2C0A9234E11D700105AF7 /* Info.plist */,
 			);
 			path = WebKitDemoUITests;
-			sourceTree = "<group>";
-		};
-		64C2C0B7234E13FB00105AF7 /* LoginPage */ = {
-			isa = PBXGroup;
-			children = (
-				64C2C0B8234E13FB00105AF7 /* index.html */,
-				64C2C0B9234E13FB00105AF7 /* Login.css */,
-			);
-			path = LoginPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,9 +273,7 @@
 				64C2C092234E11D600105AF7 /* LaunchScreen.storyboard in Resources */,
 				64C2C0BA234E13FB00105AF7 /* index.html in Resources */,
 				64C2C08F234E11D600105AF7 /* Assets.xcassets in Resources */,
-				64B8CA1723560F59003D082F /* WebToiOS.gif in Resources */,
 				64C2C0BB234E13FB00105AF7 /* Login.css in Resources */,
-				64B8CA1623560F59003D082F /* iOSToWeb.gif in Resources */,
 				64C2C08D234E11D500105AF7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,7 +302,6 @@
 				64C2C08A234E11D500105AF7 /* ViewController.swift in Sources */,
 				64C2C086234E11D400105AF7 /* AppDelegate.swift in Sources */,
 				645DD84A2355E65200177C46 /* UserData.swift in Sources */,
-				64C2C0BE234F1C2600105AF7 /* TestObjC.m in Sources */,
 				64C2C0B6234E13B100105AF7 /* WebViewController.swift in Sources */,
 				645DD8452355E46F00177C46 /* iOSNativeInputView.swift in Sources */,
 				64C2C088234E11D400105AF7 /* SceneDelegate.swift in Sources */,
