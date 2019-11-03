@@ -11,7 +11,7 @@ import UIKit
 
 
 
-class iOSNativeInputView: UIView  {
+class iOSNativeInputView: UIView , UITextFieldDelegate {
     var userData: UserData?
   
     let nibName = "iOSNativeInputView"
@@ -73,7 +73,13 @@ class iOSNativeInputView: UIView  {
         self.sumbitButtonAction!(userdata)
     }
     
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        textField.resignFirstResponder()
+    }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return true
+    }
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

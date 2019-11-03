@@ -36,7 +36,7 @@ class WebViewController: UIViewController , UIWebViewDelegate  {
         super.loadView()
        let contentController = WKUserContentController()
                contentController.add(self, name: "sumbitToiOS")
-               contentController.add(self, name: "endCurrentChat")
+             //  contentController.add(self, name: "endCurrentChat")
                let config = WKWebViewConfiguration()
                config.userContentController = contentController
                self.stepWebView = WKWebView( frame: self.view.bounds, configuration: config)
@@ -44,12 +44,6 @@ class WebViewController: UIViewController , UIWebViewDelegate  {
         self.view.addSubview(self.stepWebView)
         self.view.bringSubviewToFront(self.iOSInputView)
         
-        
-        
-       // self.iOSSumbitButton.bringSubviewToFront(self.stepWebView)
-        
-       // self.view = self.stepWebView
-       // self.stepWebView.configuration.userContentController.add(self, name: "sumbitToiOS")
     }
     
     override func viewDidLoad() {
@@ -130,11 +124,7 @@ extension WebViewController : WKNavigationDelegate {
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-       //delay(30) {
-       // sleep(30)
-         
-       // }
-        
+   
         print("didFinish")
     }
     
@@ -160,14 +150,6 @@ extension WebViewController : WKScriptMessageHandler {
         if message.name == "sumbitToiOS" {
             self.sumbitToiOS(user: userdata)
         }
-     
-//
-//        UIView.animate(withDuration: 1.6, animations: {
-//            self.delegate?.updateUI(enable: false)
-//        }) { (Bool) in
-//            self.delegate?.updateUI(enable: true)
-//
-//        }
         
     }
     
